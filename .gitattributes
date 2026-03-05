@@ -1,0 +1,4 @@
+# Git LFS — 追踪模型权重文件
+*.pt filter=lfs diff=lfs merge=lfs -text
+*.pth filter=lfs diff=lfs merge=lfs -text
+*.onnx filter=lfs diff=lfs merge=lfs -text

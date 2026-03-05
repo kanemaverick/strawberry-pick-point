@@ -1,0 +1,22 @@
+# strawberry_pose.yaml
+# YOLOv11-Pose 草莓采摘点检测数据集配置
+#
+# path 使用绝对路径，请根据本机情况修改
+# 或将 strawberry_pose_dataset/ 放在仓库根目录下后直接使用相对路径：
+#   path: ../strawberry_pose_dataset
+#
+# 注意：GitHub 仓库中只存了 labels/，images/ 需另行准备（见 dataset/README.md）
+
+path: ../strawberry_pose_dataset   # 相对于此 yaml 文件的路径
+
+train: images/train
+val: images/val
+
+# 只检测成熟草莓（ripe），未成熟草莓不采摘
+nc: 1
+names:
+  0: ripe
+
+# 关键点配置（必须填写，否则报错）
+# [关键点数量, 每个关键点的维度(x, y, visibility)]
+kpt_shape: [1, 3]
