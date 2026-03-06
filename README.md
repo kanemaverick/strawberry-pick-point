@@ -16,7 +16,7 @@
 
 ```
 .
-├── vision/                  # 视觉模块（谢中凯 · 刘炳尧）
+├── vision/                  # 视觉模块（谢中凯 · 王政鈞 · 喻士煊）
 │   ├── train.py             # 训练脚本
 │   ├── inference.py         # 推理脚本（Orbbec Gemini 335 + YOLOv11-Pose）
 │   ├── evaluate.py          # 评估脚本
@@ -25,8 +25,8 @@
 │   ├── tools/               # 数据转换工具脚本
 │   └── weights/             # 训练好的权重（Git LFS）
 │       └── strawberry_pose_v14_best.pt
-├── simulation/              # 仿真模块（陆坚其）
-├── hardware/                # 硬件/电控模块（王政鈞 · 喻士煊）
+├── simulation/              # 仿真模块（陆坚其 · 刘炳尧）
+├── hardware/                # 硬件/电控模块（喻士煊）
 ├── dataset/                 # 仅存 labels，图片不在仓库中
 │   ├── labels/train/        # 155 个标注文件
 │   └── labels/val/          # 39 个标注文件
@@ -101,8 +101,8 @@ git lfs pull
 |---|---|
 | 谢中凯 | 项目统筹 · 文献调研 · 视觉训练 |
 | 陆坚其 | MuJoCo 仿真 · IK 求解 · 采摘顺序算法 |
-| 王政鈞 | 系统联调 · 视觉优化 |
-| 刘炳尧 | 视觉模型优化（遮挡场景）· 数据扩充 |
+| 王政鈞 | 视觉模型优化（遮挡场景）· 数据扩充 |
+| 刘炳尧 | 机械臂结构学习 · 仿真协作 |
 | 喻士煊 | 嵌入式部署 · 电控硬件 |
 
 详细分工见 [`docs/项目任务分工_v2.docx`](docs/项目任务分工_v2.docx)
